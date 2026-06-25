@@ -1,0 +1,159 @@
+/* ============================================
+   FitLife — Marca, Logo & Slogan
+   ============================================ */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.logo__mark {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  transition: transform var(--transition-base), filter var(--transition-base);
+}
+
+.logo:hover .logo__mark {
+  transform: scale(1.06) rotate(-3deg);
+  filter: drop-shadow(0 0 8px rgba(0, 230, 118, 0.4));
+}
+
+.logo__brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo__text {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  letter-spacing: 0.12em;
+  color: var(--color-text-primary);
+}
+
+.logo__text-accent {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo__slogan {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+/* Logo empilhada — footer */
+.logo--stacked {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.logo--stacked .logo__stacked-img {
+  width: 160px;
+  height: auto;
+}
+
+.logo--centered {
+  align-items: center;
+}
+
+.logo--centered .logo__brand {
+  align-items: center;
+  text-align: center;
+}
+
+/* Selo de marca no hero */
+.brand-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  background: rgba(10, 14, 23, 0.6);
+  border: 1px solid rgba(0, 230, 118, 0.2);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(12px);
+  margin-bottom: var(--space-lg);
+}
+
+.brand-seal__mark {
+  width: 36px;
+  height: 36px;
+}
+
+.brand-seal__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-seal__name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.brand-seal__slogan {
+  font-size: 0.65rem;
+  color: var(--color-primary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Ícones sociais com marca */
+.footer__social a {
+  font-size: 0;
+  position: relative;
+}
+
+.footer__social a::before {
+  font-size: var(--text-lg);
+}
+
+/* Watermark decorativo */
+.brand-watermark {
+  position: absolute;
+  opacity: 0.03;
+  pointer-events: none;
+  width: 320px;
+  height: 320px;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .logo__slogan {
+    display: none;
+  }
+
+  .logo__mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo--stacked .logo__stacked-img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-seal {
+    padding: var(--space-xs) var(--space-md);
+  }
+
+  .brand-seal__mark {
+    width: 28px;
+    height: 28px;
+  }
+}

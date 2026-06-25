@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="FitLife">
+  <defs>
+    <linearGradient id="fl-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e676"/>
+      <stop offset="55%" stop-color="#00c853"/>
+      <stop offset="100%" stop-color="#00bcd4"/>
+    </linearGradient>
+    <linearGradient id="fl-fire" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ff6d00"/>
+      <stop offset="100%" stop-color="#ff9100"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="#0a0e17"/>
+  <rect x="1" y="1" width="30" height="30" rx="6" fill="none" stroke="url(#fl-grad)" stroke-width="0.6" opacity="0.45"/>
+  <!-- Haltere estilizado -->
+  <rect x="5" y="13.5" width="3.2" height="5" rx="1" fill="url(#fl-grad)"/>
+  <rect x="23.8" y="13.5" width="3.2" height="5" rx="1" fill="url(#fl-grad)"/>
+  <rect x="7.8" y="11.5" width="2.2" height="9" rx="0.8" fill="url(#fl-grad)"/>
+  <rect x="22" y="11.5" width="2.2" height="9" rx="0.8" fill="url(#fl-grad)"/>
+  <!-- Barra com pulso (vida) -->
+  <path d="M10 16h2.2l1.2-3.2 2.4 6.4 2-4.8 1.4 3.2h2.8" fill="none" stroke="url(#fl-fire)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

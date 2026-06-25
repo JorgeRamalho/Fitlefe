@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" role="img" aria-label="FitLife  Força, Saúde, Vida">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e676"/>
+      <stop offset="100%" stop-color="#00bcd4"/>
+    </linearGradient>
+    <linearGradient id="logo-fire" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ff6d00"/>
+      <stop offset="100%" stop-color="#ff9100"/>
+    </linearGradient>
+  </defs>
+  <!-- Marca -->
+  <circle cx="28" cy="28" r="26" fill="#111827"/>
+  <circle cx="28" cy="28" r="24" fill="none" stroke="url(#logo-grad)" stroke-width="0.8" opacity="0.4"/>
+  <rect x="12" y="22" width="5" height="12" rx="1.5" fill="url(#logo-grad)"/>
+  <rect x="39" y="22" width="5" height="12" rx="1.5" fill="url(#logo-grad)"/>
+  <rect x="16" y="19" width="3.5" height="18" rx="1" fill="url(#logo-grad)"/>
+  <rect x="36.5" y="19" width="3.5" height="18" rx="1" fill="url(#logo-grad)"/>
+  <path d="M18 28h3l2.5-6 4 12 3.5-8 2.5 5.5h4" fill="none" stroke="url(#logo-fire)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Wordmark -->
+  <text x="64" y="34" font-family="'Bebas Neue', Impact, sans-serif" font-size="36" fill="#f8fafc" letter-spacing="3">FIT</text>
+  <text x="118" y="34" font-family="'Bebas Neue', Impact, sans-serif" font-size="36" fill="url(#logo-grad)" letter-spacing="3">LIFE</text>
+  <!-- Slogan -->
+  <text x="64" y="50" font-family="'Oswald', 'Arial Narrow', sans-serif" font-size="9.5" fill="#94a3b8" letter-spacing="2.8" font-weight="500">FORÇA · SAÚDE · VIDA</text>
+</svg>
