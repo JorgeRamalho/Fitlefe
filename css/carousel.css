@@ -1,0 +1,231 @@
+/* ============================================
+   FitLife — Carrossel (acima do Hero)
+   ============================================ */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: clamp(990px, 42vw, 480px);
+  margin-top: var(--header-height);
+  overflow: hidden;
+  background: var(--color-bg-dark);
+}
+
+.carousel__track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  background: var(--color-bg-dark);
+}
+
+/* Imagem preenche todo o quadro, recorte centralizado mínimo */
+.carousel__slide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.carousel__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 14, 23, 0.78) 0%,
+      rgba(10, 14, 23, 0.30) 40%,
+      rgba(10, 14, 23, 0) 70%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10, 14, 23, 0) 60%,
+      rgba(10, 14, 23, 0.5) 100%
+    );
+  pointer-events: none;
+}
+
+.carousel__content {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-inline: var(--space-lg);
+  z-index: 3;
+}
+
+.carousel__content > * {
+  max-width: 560px;
+}
+
+.carousel__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  width: fit-content;
+  padding: var(--space-xs) var(--space-md);
+  background: rgba(0, 230, 118, 0.15);
+  border: 1px solid rgba(0, 230, 118, 0.35);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.carousel__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.carousel__title span {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.carousel__text {
+  font-size: clamp(var(--text-sm), 2vw, var(--text-lg));
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 420px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Controles */
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 14, 23, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-full);
+  color: var(--color-text-primary);
+  font-size: var(--text-xl);
+  transition: all var(--transition-fast);
+}
+
+.carousel__btn:hover {
+  background: rgba(0, 230, 118, 0.2);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.carousel__btn--prev {
+  left: var(--space-lg);
+}
+
+.carousel__btn--next {
+  right: var(--space-lg);
+}
+
+.carousel__dots {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.carousel__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.carousel__dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.carousel__dot--active {
+  width: 28px;
+  background: var(--gradient-primary);
+}
+
+.carousel__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  z-index: 4;
+  transition: width 0.1s linear;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: clamp(280px, 60vw, 440px);
+  }
+
+  .carousel__content {
+    padding-inline: var(--space-lg);
+  }
+
+  .carousel__content > * {
+    max-width: 85%;
+  }
+
+  .carousel__text {
+    display: none;
+  }
+
+  .carousel__btn {
+    width: 36px;
+    height: 36px;
+    font-size: var(--text-lg);
+  }
+
+  .carousel__btn--prev {
+    left: var(--space-sm);
+  }
+
+  .carousel__btn--next {
+    right: var(--space-sm);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__track {
+    transition: none;
+  }
+}
