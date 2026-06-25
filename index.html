@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitLife — Academia premium com treinos personalizados, modalidades variadas e a melhor estrutura para transformar seu corpo e sua vida.">
+  <meta name="keywords" content="academia, fitness, musculação, crossfit, personal trainer, saúde, bem-estar">
+  <meta name="theme-color" content="#0a0e17">
+  <meta name="author" content="FitLife Academia">
+  <title>FitLife — Transforme Seu Corpo, Transforme Sua Vida</title>
+
+  <!-- Favicon & Marca -->
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/favicon.svg" sizes="any">
+  <link rel="apple-touch-icon" href="assets/brand/logo-mark.svg">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FitLife — Força, Saúde, Vida">
+  <meta property="og:description" content="Transforme seu corpo, transforme sua vida. Academia premium com treinos personalizados e modalidades para todos os níveis.">
+  <meta property="og:image" content="assets/brand/logo.svg">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FitLife — Força, Saúde, Vida">
+  <meta name="twitter:image" content="assets/brand/logo-mark.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/brand.css">
+  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="FitLife — página inicial">
+        <img src="assets/brand/logo-mark.svg" alt="" class="logo__mark" width="42" height="42">
+        <span class="logo__brand">
+          <span class="logo__text">FIT<span class="logo__text-accent">LIFE</span></span>
+          <span class="logo__slogan">Força · Saúde · Vida</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list" id="navList">
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#modalidades" class="nav__link">Modalidades</a></li>
+          <li><a href="#planos" class="nav__link">Planos</a></li>
+          <li><a href="#loja" class="nav__link">Loja</a></li>
+          <li><a href="#treinadores" class="nav__link">Treinadores</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#cadastro" class="nav__link">Cadastro</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+        <button type="button" class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+          🛒
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+        <a href="#cadastro" class="btn btn--primary">Matricule-se</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== CARROSSEL ========== -->
+    <section class="carousel" id="carousel" aria-label="Galeria FitLife — nossa estrutura e treinos">
+      <div class="carousel__track" id="carouselTrack">
+        <div class="carousel__slide">
+          <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80"
+            alt="Academia moderna com equipamentos Technogym de última geração"
+            loading="eager"
+          >
+          <div class="carousel__overlay"></div>
+          <div class="carousel__content">
+            <span class="carousel__tag">🏋️ Estrutura Premium</span>
+            <h2 class="carousel__title">Equipamentos de <span>Ponta</span></h2>
+            <p class="carousel__text">Musculação completa com aparelhos profissionais para todos os níveis.</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide">
+          <img
+            src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1600&q=80"
+            alt="Atleta executando treino de alta intensidade"
+            loading="lazy"
+          >
+          <div class="carousel__overlay"></div>
+          <div class="carousel__content">
+            <span class="carousel__tag">🔥 Treino Intenso</span>
+            <h2 class="carousel__title">Supere Seus <span>Limites</span></h2>
+            <p class="carousel__text">Ambiente motivador para você dar o máximo em cada repetição.</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide">
+          <img
+            src="https://images.unsplash.com/photo-1540497077202-7a8f3a803bae?w=1600&q=80"
+            alt="Área de musculação ampla e iluminada"
+            loading="lazy"
+          >
+          <div class="carousel__overlay"></div>
+          <div class="carousel__content">
+            <span class="carousel__tag">💪 Musculação</span>
+            <h2 class="carousel__title">Espaço Para <span>Crescer</span></h2>
+            <p class="carousel__text">Área ampla, climatizada e organizada para treinos seguros e eficientes.</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide">
+          <img
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1600&q=80"
+            alt="Aula coletiva de spinning em grupo"
+            loading="lazy"
+          >
+          <div class="carousel__overlay"></div>
+          <div class="carousel__content">
+            <span class="carousel__tag">🚴 Aulas Coletivas</span>
+            <h2 class="carousel__title">Energia em <span>Grupo</span></h2>
+            <p class="carousel__text">Spinning, CrossFit, dança e muito mais com instrutores certificados.</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80"
+            alt="Sala de yoga e alongamento para recuperação"
+            loading="lazy"
+          >
+          <div class="carousel__overlay"></div>
+          <div class="carousel__content">
+            <span class="carousel__tag">🧘 Bem-Estar</span>
+            <h2 class="carousel__title">Corpo e <span>Mente</span></h2>
+            <p class="carousel__text">Yoga, pilates e alongamento para equilíbrio e recuperação muscular.</p>
+          </div>
+        </div>
+
+        <div class="carousel__slide">
+          <img
+            src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1600&q=80"
+            alt="Vestiários modernos e área de descanso"
+            loading="lazy"
+          >
+          <div class="carousel__overlay"></div>
+          <div class="carousel__content">
+            <span class="carousel__tag">✨ Conforto Total</span>
+            <h2 class="carousel__title">Sua Casa <span>Fitness</span></h2>
+            <p class="carousel__text">Vestiários completos, armários e área de descanso para sua comodidade.</p>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="carousel__btn carousel__btn--prev" id="carouselPrev" aria-label="Slide anterior">‹</button>
+      <button type="button" class="carousel__btn carousel__btn--next" id="carouselNext" aria-label="Próximo slide">›</button>
+      <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Navegação do carrossel"></div>
+      <div class="carousel__progress" id="carouselProgress" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========== MODALIDADES ========== -->
+    <section class="section section--alt" id="modalidades">
+      <div class="container">
+        <div class="section__header fade-in">
+          <div class="section__badge">🏃 Modalidades</div>
+          <h2 class="section__title">Encontre Seu <span>Treino Ideal</span></h2>
+          <p class="section__subtitle">
+            Do iniciante ao atleta, temos a modalidade perfeita para seus objetivos e estilo de vida.
+          </p>
+        </div>
+
+        <div class="modalidades__grid">
+          <div class="card modalidade-card fade-in">
+            <span class="modalidade-card__emoji">🏋️‍♂️</span>
+            <h3 class="card__title">Musculação</h3>
+            <p class="card__text">Hipertrofia, força e definição com equipamentos Technogym de última geração.</p>
+            <span class="card__tag">Força</span>
+            <div class="modalidade-card__level">
+              <span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="card modalidade-card fade-in">
+            <span class="modalidade-card__emoji">🔥</span>
+            <h3 class="card__title">CrossFit</h3>
+            <p class="card__text">WODs intensos que combinam força, resistência e agilidade em alta intensidade.</p>
+            <span class="card__tag">HIIT</span>
+            <div class="modalidade-card__level">
+              <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span>
+            </div>
+          </div>
+
+          <div class="card modalidade-card fade-in">
+            <span class="modalidade-card__emoji">🚴</span>
+            <h3 class="card__title">Spinning</h3>
+            <p class="card__text">Aulas em grupo com música motivante. Queime até 600 calorias por sessão!</p>
+            <span class="card__tag">Cardio</span>
+            <div class="modalidade-card__level">
+              <span class="active"></span><span class="active"></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="card modalidade-card fade-in">
+            <span class="modalidade-card__emoji">🧘‍♀️</span>
+            <h3 class="card__title">Yoga & Pilates</h3>
+            <p class="card__text">Flexibilidade, equilíbrio e conexão mente-corpo para recuperação e bem-estar.</p>
+            <span class="card__tag">Mindfulness</span>
+            <div class="modalidade-card__level">
+              <span class="active"></span><span class="active"></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="card modalidade-card fade-in">
+            <span class="modalidade-card__emoji">🥊</span>
+            <h3 class="card__title">Boxe & Muay Thai</h3>
+            <p class="card__text">Artes marciais para condicionamento, coordenação e alívio do estresse.</p>
+            <span class="card__tag">Combate</span>
+            <div class="modalidade-card__level">
+              <span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span>
+            </div>
+          </div>
+
+          <div class="card modalidade-card fade-in">
+            <span class="modalidade-card__emoji">💃</span>
+            <h3 class="card__title">Dança Fitness</h3>
+            <p class="card__text">Zumba, FitDance e ritmos latinos. Treinar nunca foi tão divertido!</p>
+            <span class="card__tag">Diversão</span>
+            <div class="modalidade-card__level">
+              <span class="active"></span><span class="active"></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATS BAR ========== -->
+    <section class="section" style="padding-top: 0; padding-bottom: 0;">
+      <div class="container">
+        <div class="stats-bar fade-in">
+          <div class="stats-bar__item">
+            <div class="stats-bar__number">24h</div>
+            <div class="stats-bar__label">🕐 Funcionamento</div>
+          </div>
+          <div class="stats-bar__item">
+            <div class="stats-bar__number">50+</div>
+            <div class="stats-bar__label">🏋️ Equipamentos</div>
+          </div>
+          <div class="stats-bar__item">
+            <div class="stats-bar__number">12</div>
+            <div class="stats-bar__label">🧘 Aulas Coletivas</div>
+          </div>
+          <div class="stats-bar__item">
+            <div class="stats-bar__number">98%</div>
+            <div class="stats-bar__label">😊 Satisfação</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="section" id="sobre">
+      <img src="assets/brand/logo-mark.svg" alt="" class="brand-watermark" aria-hidden="true">
+      <div class="container">
+        <div class="section__header fade-in">
+          <div class="section__badge">🏢 Sobre Nós</div>
+          <h2 class="section__title">Mais Que Uma <span>Academia</span></h2>
+          <p class="section__subtitle">
+            Somos um ecossistema completo de saúde, performance e bem-estar. 
+            Cada detalhe foi pensado para maximizar seus resultados.
+          </p>
+        </div>
+
+        <div class="about">
+          <div class="about__images fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1540497077202-7a8f3a803bae?w=400&q=80"
+              alt="Área de musculação com equipamentos modernos"
+              class="about__image about__image--tall"
+              loading="lazy"
+            >
+            <img
+              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80"
+              alt="Aula de spinning em grupo"
+              class="about__image"
+              loading="lazy"
+            >
+            <img
+              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80"
+              alt="Prática de yoga e alongamento"
+              class="about__image"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="about__content fade-in">
+            <h3>🎯 Nossa Missão</h3>
+            <p class="section__subtitle" style="text-align: left; margin-bottom: 0;">
+              Democratizar o acesso a treinos de qualidade, criando uma comunidade 
+              onde cada pessoa se sinta motivada a alcançar sua melhor versão — 
+              independente do nível de condicionamento.
+            </p>
+
+            <div class="about__features">
+              <div class="about__feature">
+                <div class="about__feature-icon">🔬</div>
+                <div class="about__feature-text">
+                  <h4>Ciência Aplicada</h4>
+                  <p>Treinos baseados em evidências científicas e periodização inteligente.</p>
+                </div>
+              </div>
+              <div class="about__feature">
+                <div class="about__feature-icon">🤝</div>
+                <div class="about__feature-text">
+                  <h4>Comunidade Ativa</h4>
+                  <p>Eventos, desafios mensais e grupo de apoio para manter a motivação.</p>
+                </div>
+              </div>
+              <div class="about__feature">
+                <div class="about__feature-icon">📱</div>
+                <div class="about__feature-text">
+                  <h4>App Exclusivo</h4>
+                  <p>Acompanhe treinos, dieta e evolução direto do seu celular.</p>
+                </div>
+              </div>
+              <div class="about__feature">
+                <div class="about__feature-icon">🥗</div>
+                <div class="about__feature-text">
+                  <h4>Nutrição Integrada</h4>
+                  <p>Consultoria nutricional inclusa nos planos Premium e Elite.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
+          alt="Academia moderna com equipamentos de última geração"
+          class="hero__bg-image"
+          loading="eager"
+        >
+        <div class="hero__bg-overlay"></div>
+      </div>
+
+      <div class="hero__particles" id="particles"></div>
+
+      <div class="container hero__content">
+        <div class="hero__text">
+          <div class="brand-seal">
+            <img src="assets/brand/logo-mark.svg" alt="" class="brand-seal__mark" width="36" height="36">
+            <div class="brand-seal__text">
+              <span class="brand-seal__name">FITLIFE</span>
+              <span class="brand-seal__slogan">Força · Saúde · Vida</span>
+            </div>
+          </div>
+          <div class="hero__badge">🔥 Aula experimental grátis</div>
+          <h1 class="hero__title">
+            Transforme Seu<br>
+            <span class="highlight">Corpo</span> e Sua<br>
+            <span class="highlight--fire">Vida</span>
+          </h1>
+          <p class="hero__description">
+            Na FitLife, cada gota de suor conta uma história de superação. 
+            Equipamentos de ponta, treinadores certificados e um ambiente 
+            que inspira você a ir além dos seus limites. 🏋️‍♂️
+          </p>
+          <div class="hero__actions">
+            <a href="#cadastro" class="btn btn--primary btn--lg">Comece Agora 🚀</a>
+            <a href="#modalidades" class="btn btn--secondary btn--lg">Ver Modalidades</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-number" data-count="2500">0</div>
+              <div class="hero__stat-label">Alunos Ativos</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-number" data-count="35">0</div>
+              <div class="hero__stat-label">Treinadores</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-number" data-count="15">0</div>
+              <div class="hero__stat-label">Anos de Experiência</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80"
+              alt="Atleta treinando com determinação na academia"
+              class="hero__image"
+              loading="eager"
+            >
+          </div>
+          <div class="hero__floating-card hero__floating-card--top">
+            <div class="hero__floating-card-icon">🏆</div>
+            <div class="hero__floating-card-text">+500 Transformações</div>
+            <div class="hero__floating-card-sub">Este ano</div>
+          </div>
+          <div class="hero__floating-card hero__floating-card--bottom">
+            <div class="hero__floating-card-icon">⚡</div>
+            <div class="hero__floating-card-text">Treino HIIT</div>
+            <div class="hero__floating-card-sub">Queima 800 kcal/h</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PLANOS ========== -->
+    <section class="section" id="planos">
+      <div class="container">
+        <div class="section__header fade-in">
+          <div class="section__badge">💎 Planos</div>
+          <h2 class="section__title">Escolha Seu <span>Plano</span></h2>
+          <p class="section__subtitle">
+            Investimento na sua saúde com planos flexíveis. Sem taxa de matrícula no plano anual!
+          </p>
+        </div>
+
+        <div class="planos__grid">
+          <div class="card plano-card fade-in">
+            <h3 class="card__title">Essencial</h3>
+            <p class="card__text">Ideal para quem está começando a jornada fitness.</p>
+            <div class="plano-card__price">
+              <span class="plano-card__currency">R$</span>
+              <span class="plano-card__amount">89</span>
+              <span class="plano-card__period">/mês</span>
+            </div>
+            <ul class="plano-card__features">
+              <li class="plano-card__feature">Acesso à musculação</li>
+              <li class="plano-card__feature">Vestiário e armários</li>
+              <li class="plano-card__feature">Avaliação física inicial</li>
+              <li class="plano-card__feature plano-card__feature--disabled">Aulas coletivas</li>
+              <li class="plano-card__feature plano-card__feature--disabled">Personal trainer</li>
+              <li class="plano-card__feature plano-card__feature--disabled">Nutricionista</li>
+            </ul>
+            <a href="#cadastro" class="btn btn--secondary btn--full">Escolher Plano</a>
+          </div>
+
+          <div class="card plano-card card--featured fade-in">
+            <div class="card__badge">⭐ Mais Popular</div>
+            <h3 class="card__title">Premium</h3>
+            <p class="card__text">O equilíbrio perfeito entre variedade e acompanhamento.</p>
+            <div class="plano-card__price">
+              <span class="plano-card__currency">R$</span>
+              <span class="plano-card__amount">149</span>
+              <span class="plano-card__period">/mês</span>
+            </div>
+            <ul class="plano-card__features">
+              <li class="plano-card__feature">Tudo do Essencial</li>
+              <li class="plano-card__feature">Todas as aulas coletivas</li>
+              <li class="plano-card__feature">2 sessões personal/mês</li>
+              <li class="plano-card__feature">App FitLife completo</li>
+              <li class="plano-card__feature">Acesso 24 horas</li>
+              <li class="plano-card__feature plano-card__feature--disabled">Nutricionista</li>
+            </ul>
+            <a href="#cadastro" class="btn btn--primary btn--full">Escolher Plano</a>
+          </div>
+
+          <div class="card plano-card fade-in">
+            <h3 class="card__title">Elite</h3>
+            <p class="card__text">Experiência completa para resultados máximos.</p>
+            <div class="plano-card__price">
+              <span class="plano-card__currency">R$</span>
+              <span class="plano-card__amount">249</span>
+              <span class="plano-card__period">/mês</span>
+            </div>
+            <ul class="plano-card__features">
+              <li class="plano-card__feature">Tudo do Premium</li>
+              <li class="plano-card__feature">Personal ilimitado</li>
+              <li class="plano-card__feature">Nutricionista mensal</li>
+              <li class="plano-card__feature">Suplementação básica</li>
+              <li class="plano-card__feature">Área VIP exclusiva</li>
+              <li class="plano-card__feature">Convidado 2x/mês</li>
+            </ul>
+            <a href="#cadastro" class="btn btn--fire btn--full">Escolher Plano</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LOJA ========== -->
+    <section class="section section--alt" id="loja">
+      <div class="container">
+        <div class="section__header fade-in">
+          <div class="section__badge">🛒 FitLife Shop</div>
+          <h2 class="section__title">Suplementos & <span>Nutrição</span></h2>
+          <p class="section__subtitle">
+            Produtos selecionados pelos nossos treinadores e nutricionistas. 
+            Retire na academia ou peça pelo WhatsApp. Alunos ganham 10% de desconto! 🎁
+          </p>
+        </div>
+
+        <div class="shop__toolbar fade-in">
+          <div class="shop__filters" id="shopFilters"></div>
+          <div class="shop__search">
+            <span class="shop__search-icon">🔍</span>
+            <input type="search" id="shopSearch" class="shop__search-input" placeholder="Buscar produtos...">
+          </div>
+        </div>
+
+        <div class="shop__grid" id="shopGrid"></div>
+
+        <div class="shop__empty" id="shopEmpty">
+          <p style="font-size: 2rem; margin-bottom: var(--space-md);">🔍</p>
+          <p>Nenhum produto encontrado para sua busca.</p>
+        </div>
+
+        <div class="shop__perks fade-in">
+          <div class="shop__perk">
+            <span class="shop__perk-icon">🏋️</span>
+            <div>
+              <strong>Retirada na Academia</strong>
+              Pronto em até 2 horas
+            </div>
+          </div>
+          <div class="shop__perk">
+            <span class="shop__perk-icon">✅</span>
+            <div>
+              <strong>Produtos Originais</strong>
+              Lacrados e com nota fiscal
+            </div>
+          </div>
+          <div class="shop__perk">
+            <span class="shop__perk-icon">🎁</span>
+            <div>
+              <strong>10% para Alunos</strong>
+              Desconto exclusivo FitLife
+            </div>
+          </div>
+          <div class="shop__perk">
+            <span class="shop__perk-icon">💬</span>
+            <div>
+              <strong>Consultoria Grátis</strong>
+              Tire dúvidas com nossa equipe
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TREINADORES ========== -->
+    <section class="section section--alt" id="treinadores">
+      <div class="container">
+        <div class="section__header fade-in">
+          <div class="section__badge">👨‍🏫 Equipe</div>
+          <h2 class="section__title">Nossos <span>Treinadores</span></h2>
+          <p class="section__subtitle">
+            Profissionais certificados, apaixonados por fitness e comprometidos com seus resultados.
+          </p>
+        </div>
+
+        <div class="treinadores__grid">
+          <div class="card treinador-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=300&q=80"
+              alt="Carlos Mendes - Personal Trainer"
+              class="treinador-card__avatar"
+              loading="lazy"
+            >
+            <div class="treinador-card__role">Head Coach</div>
+            <h3 class="card__title">Carlos Mendes</h3>
+            <p class="card__text">CREF 012345-G/SP · 12 anos de experiência em hipertrofia e powerlifting.</p>
+            <div class="treinador-card__specialties">
+              <span class="treinador-card__specialty">Musculação</span>
+              <span class="treinador-card__specialty">Powerlifting</span>
+            </div>
+          </div>
+
+          <div class="card treinador-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=300&q=80"
+              alt="Ana Paula Silva - Instrutora de CrossFit"
+              class="treinador-card__avatar"
+              loading="lazy"
+            >
+            <div class="treinador-card__role">CrossFit Coach</div>
+            <h3 class="card__title">Ana Paula Silva</h3>
+            <p class="card__text">CrossFit L2 · Ex-atleta de triathlon, especialista em condicionamento.</p>
+            <div class="treinador-card__specialties">
+              <span class="treinador-card__specialty">CrossFit</span>
+              <span class="treinador-card__specialty">HIIT</span>
+            </div>
+          </div>
+
+          <div class="card treinador-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&q=80"
+              alt="Rafael Costa - Instrutor de Boxe"
+              class="treinador-card__avatar"
+              loading="lazy"
+            >
+            <div class="treinador-card__role">Instrutor de Combate</div>
+            <h3 class="card__title">Rafael Costa</h3>
+            <p class="card__text">Campeão estadual de boxe · Certificado em Muay Thai e defesa pessoal.</p>
+            <div class="treinador-card__specialties">
+              <span class="treinador-card__specialty">Boxe</span>
+              <span class="treinador-card__specialty">Muay Thai</span>
+            </div>
+          </div>
+
+          <div class="card treinador-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=300&q=80"
+              alt="Juliana Ferreira - Instrutora de Yoga"
+              class="treinador-card__avatar"
+              loading="lazy"
+            >
+            <div class="treinador-card__role">Yoga & Wellness</div>
+            <h3 class="card__title">Juliana Ferreira</h3>
+            <p class="card__text">RYT-500 · Especialista em yoga terapêutico, pilates e meditação.</p>
+            <div class="treinador-card__specialties">
+              <span class="treinador-card__specialty">Yoga</span>
+              <span class="treinador-card__specialty">Pilates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DEPOIMENTOS ========== -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <div class="section__header fade-in">
+          <div class="section__badge">💬 Depoimentos</div>
+          <h2 class="section__title">Histórias de <span>Transformação</span></h2>
+          <p class="section__subtitle">
+            Resultados reais de pessoas reais. Você pode ser o próximo! 🌟
+          </p>
+        </div>
+
+        <div class="depoimentos__grid">
+          <div class="card depoimento-card fade-in">
+            <div class="depoimento-card__stars">★★★★★</div>
+            <p class="depoimento-card__text">
+              "Perdi 18kg em 6 meses com o acompanhamento do Carlos. A FitLife mudou 
+              completamente minha relação com o exercício. Hoje não consigo viver sem!"
+            </p>
+            <div class="depoimento-card__author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Marcos Oliveira" class="depoimento-card__avatar" loading="lazy">
+              <div>
+                <div class="depoimento-card__name">Marcos Oliveira</div>
+                <div class="depoimento-card__result">📉 -18kg em 6 meses</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card depoimento-card fade-in">
+            <div class="depoimento-card__stars">★★★★★</div>
+            <p class="depoimento-card__text">
+              "As aulas de CrossFit com a Ana são incríveis! Ambiente acolhedor, 
+              treinos desafiadores e uma comunidade que me motiva todos os dias."
+            </p>
+            <div class="depoimento-card__author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Fernanda Lima" class="depoimento-card__avatar" loading="lazy">
+              <div>
+                <div class="depoimento-card__name">Fernanda Lima</div>
+                <div class="depoimento-card__result">💪 +40% de resistência</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card depoimento-card fade-in">
+            <div class="depoimento-card__stars">★★★★★</div>
+            <p class="depoimento-card__text">
+              "Depois dos 50, achei que era tarde demais. O plano Elite me provou 
+              o contrário — ganhei massa muscular e minha saúde nunca esteve melhor!"
+            </p>
+            <div class="depoimento-card__author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Roberto Almeida" class="depoimento-card__avatar" loading="lazy">
+              <div>
+                <div class="depoimento-card__name">Roberto Almeida</div>
+                <div class="depoimento-card__result">🏆 +5kg massa magra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMULÁRIO DE CADASTRO ========== -->
+    <section class="section section--alt" id="cadastro">
+      <div class="container">
+        <div class="section__header fade-in">
+          <div class="section__badge">📝 Cadastro</div>
+          <h2 class="section__title">Comece Sua <span>Transformação</span></h2>
+          <p class="section__subtitle">
+            Preencha o formulário e ganhe uma aula experimental gratuita + avaliação física completa!
+          </p>
+        </div>
+
+        <div class="formulario">
+          <div class="formulario__info fade-in">
+            <h3 style="font-family: var(--font-heading); font-size: var(--text-2xl); margin-bottom: var(--space-md);">
+              Por que se cadastrar? 🤔
+            </h3>
+            <p style="color: var(--color-text-secondary); line-height: 1.7;">
+              Ao se cadastrar, nossa equipe monta um plano personalizado baseado 
+              no seu perfil, objetivos e disponibilidade. Sem compromisso!
+            </p>
+
+            <div class="formulario__benefits">
+              <div class="formulario__benefit">
+                <span class="formulario__benefit-icon">🎁</span>
+                <div class="formulario__benefit-text">
+                  <strong>Aula Experimental Grátis</strong>
+                  Experimente qualquer modalidade sem custo
+                </div>
+              </div>
+              <div class="formulario__benefit">
+                <span class="formulario__benefit-icon">📊</span>
+                <div class="formulario__benefit-text">
+                  <strong>Avaliação Física Completa</strong>
+                  Bioimpedância, medidas e teste de condicionamento
+                </div>
+              </div>
+              <div class="formulario__benefit">
+                <span class="formulario__benefit-icon">📋</span>
+                <div class="formulario__benefit-text">
+                  <strong>Plano Personalizado</strong>
+                  Treino sob medida para seus objetivos
+                </div>
+              </div>
+              <div class="formulario__benefit">
+                <span class="formulario__benefit-icon">💰</span>
+                <div class="formulario__benefit-text">
+                  <strong>Desconto de 20%</strong>
+                  No primeiro mês para novos alunos
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form fade-in" id="cadastroForm">
+            <h3 class="form__title">Formulário de Matrícula</h3>
+            <p class="form__subtitle">Campos com <span class="required">*</span> são obrigatórios</p>
+
+            <div class="form__progress">
+              <div class="form__progress-step form__progress-step--active" data-step="1"></div>
+              <div class="form__progress-step" data-step="2"></div>
+              <div class="form__progress-step" data-step="3"></div>
+            </div>
+
+            <form id="fitlifeForm" novalidate>
+              <!-- Step 1: Dados Pessoais -->
+              <fieldset data-form-step="1">
+                <div class="divider">👤 Dados Pessoais</div>
+
+                <div class="form__group">
+                  <label class="form__label" for="nome">Nome Completo <span class="required">*</span></label>
+                  <input type="text" id="nome" name="nome" class="form__input" placeholder="Seu nome completo" required>
+                  <span class="form__error" id="nomeError">Informe seu nome completo</span>
+                </div>
+
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="email">E-mail <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required>
+                    <span class="form__error" id="emailError">Informe um e-mail válido</span>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="telefone">Telefone / WhatsApp <span class="required">*</span></label>
+                    <input type="tel" id="telefone" name="telefone" class="form__input" placeholder="(00) 00000-0000" required>
+                    <span class="form__error" id="telefoneError">Informe um telefone válido</span>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="nascimento">Data de Nascimento <span class="required">*</span></label>
+                    <input type="date" id="nascimento" name="nascimento" class="form__input" required>
+                    <span class="form__error" id="nascimentoError">Informe sua data de nascimento</span>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="genero">Gênero</label>
+                    <select id="genero" name="genero" class="form__select">
+                      <option value="">Selecione</option>
+                      <option value="masculino">Masculino</option>
+                      <option value="feminino">Feminino</option>
+                      <option value="outro">Outro</option>
+                      <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="cpf">CPF <span class="required">*</span></label>
+                    <input type="text" id="cpf" name="cpf" class="form__input" placeholder="000.000.000-00" required>
+                    <span class="form__error" id="cpfError">Informe um CPF válido</span>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" class="form__input" placeholder="00000-000">
+                  </div>
+                </div>
+
+                <button type="button" class="btn btn--primary btn--full" data-next-step>Próximo: Perfil Fitness →</button>
+              </fieldset>
+
+              <!-- Step 2: Perfil Fitness -->
+              <fieldset data-form-step="2" hidden>
+                <div class="divider">🏋️ Perfil Fitness</div>
+
+                <div class="form__group">
+                  <label class="form__label">Objetivo Principal <span class="required">*</span></label>
+                  <div class="form__radio-group" id="objetivoGroup">
+                    <label class="form__radio">
+                      <input type="radio" name="objetivo" value="emagrecimento" required>
+                      🔥 Emagrecimento
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="objetivo" value="hipertrofia">
+                      💪 Hipertrofia
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="objetivo" value="condicionamento">
+                      🏃 Condicionamento
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="objetivo" value="saude">
+                      ❤️ Saúde Geral
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="objetivo" value="reabilitacao">
+                      🩹 Reabilitação
+                    </label>
+                  </div>
+                  <span class="form__error" id="objetivoError">Selecione seu objetivo principal</span>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="nivel">Nível de Experiência <span class="required">*</span></label>
+                  <select id="nivel" name="nivel" class="form__select" required>
+                    <option value="">Selecione seu nível</option>
+                    <option value="iniciante">🌱 Iniciante — Nunca treinei ou parei há muito tempo</option>
+                    <option value="intermediario">⚡ Intermediário — Treino há 6 meses a 2 anos</option>
+                    <option value="avancado">🔥 Avançado — Treino há mais de 2 anos</option>
+                    <option value="atleta">🏆 Atleta — Compito ou treino profissionalmente</option>
+                  </select>
+                  <span class="form__error" id="nivelError">Selecione seu nível de experiência</span>
+                </div>
+
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="peso">Peso Atual (kg)</label>
+                    <input type="number" id="peso" name="peso" class="form__input" placeholder="Ex: 75" min="30" max="300">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="altura">Altura (cm)</label>
+                    <input type="number" id="altura" name="altura" class="form__input" placeholder="Ex: 175" min="100" max="250">
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label">Modalidades de Interesse</label>
+                  <div class="form__checkbox-group">
+                    <label class="form__checkbox">
+                      <input type="checkbox" name="modalidades" value="musculacao"> 🏋️ Musculação
+                    </label>
+                    <label class="form__checkbox">
+                      <input type="checkbox" name="modalidades" value="crossfit"> 🔥 CrossFit
+                    </label>
+                    <label class="form__checkbox">
+                      <input type="checkbox" name="modalidades" value="spinning"> 🚴 Spinning
+                    </label>
+                    <label class="form__checkbox">
+                      <input type="checkbox" name="modalidades" value="yoga"> 🧘 Yoga
+                    </label>
+                    <label class="form__checkbox">
+                      <input type="checkbox" name="modalidades" value="boxe"> 🥊 Boxe
+                    </label>
+                    <label class="form__checkbox">
+                      <input type="checkbox" name="modalidades" value="danca"> 💃 Dança
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="frequencia">Frequência Desejada</label>
+                  <select id="frequencia" name="frequencia" class="form__select">
+                    <option value="">Quantas vezes por semana?</option>
+                    <option value="2x">2x por semana</option>
+                    <option value="3x">3x por semana</option>
+                    <option value="4x">4x por semana</option>
+                    <option value="5x">5x por semana</option>
+                    <option value="6x">6x ou mais por semana</option>
+                  </select>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label">Melhor Horário para Treinar</label>
+                  <div class="form__radio-group">
+                    <label class="form__radio">
+                      <input type="radio" name="horario" value="manha"> 🌅 Manhã
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="horario" value="tarde"> ☀️ Tarde
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="horario" value="noite"> 🌙 Noite
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="horario" value="flexivel"> 🔄 Flexível
+                    </label>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: var(--space-md);">
+                  <button type="button" class="btn btn--secondary" data-prev-step style="flex: 1;">← Voltar</button>
+                  <button type="button" class="btn btn--primary" data-next-step style="flex: 2;">Próximo: Plano & Saúde →</button>
+                </div>
+              </fieldset>
+
+              <!-- Step 3: Plano & Saúde -->
+              <fieldset data-form-step="3" hidden>
+                <div class="divider">💎 Plano & Saúde</div>
+
+                <div class="form__group">
+                  <label class="form__label" for="plano">Plano de Interesse <span class="required">*</span></label>
+                  <select id="plano" name="plano" class="form__select" required>
+                    <option value="">Selecione um plano</option>
+                    <option value="essencial">Essencial — R$ 89/mês</option>
+                    <option value="premium">Premium — R$ 149/mês ⭐</option>
+                    <option value="elite">Elite — R$ 249/mês</option>
+                    <option value="indeciso">Ainda estou em dúvida</option>
+                  </select>
+                  <span class="form__error" id="planoError">Selecione um plano</span>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="condicoes">Condições de Saúde / Lesões</label>
+                  <textarea id="condicoes" name="condicoes" class="form__textarea" placeholder="Informe se possui alguma lesão, problema cardíaco, limitação física ou usa medicamentos contínuos..."></textarea>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label">Já foi aluno de alguma academia?</label>
+                  <div class="form__radio-group">
+                    <label class="form__radio">
+                      <input type="radio" name="experiencia_academia" value="sim"> ✅ Sim
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="experiencia_academia" value="nao"> ❌ Não, será minha primeira vez
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="indicacao">Como nos conheceu?</label>
+                  <select id="indicacao" name="indicacao" class="form__select">
+                    <option value="">Selecione</option>
+                    <option value="instagram">📸 Instagram</option>
+                    <option value="google">🔍 Google</option>
+                    <option value="indicacao">👥 Indicação de amigo</option>
+                    <option value="passando">🚶 Passando em frente</option>
+                    <option value="outro">📌 Outro</option>
+                  </select>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="observacoes">Observações Adicionais</label>
+                  <textarea id="observacoes" name="observacoes" class="form__textarea" placeholder="Algo mais que gostaria de nos contar?"></textarea>
+                </div>
+
+                <label class="form__consent">
+                  <input type="checkbox" id="consentimento" name="consentimento" required>
+                  <span>Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>. Autorizo o contato da FitLife pelos dados informados. <span class="required">*</span></span>
+                </label>
+                <span class="form__error" id="consentimentoError">Você precisa aceitar os termos para continuar</span>
+
+                <div style="display: flex; gap: var(--space-md);">
+                  <button type="button" class="btn btn--secondary" data-prev-step style="flex: 1;">← Voltar</button>
+                  <button type="submit" class="btn btn--primary btn--lg" style="flex: 2;">🚀 Finalizar Cadastro</button>
+                </div>
+              </fieldset>
+            </form>
+
+            <div class="form__success" id="formSuccess">
+              <div class="form__success-icon">
+              <img src="assets/brand/logo-mark.svg" alt="" width="72" height="72" style="margin: 0 auto var(--space-lg);">
+            </div>
+              <h3>Cadastro Realizado com Sucesso!</h3>
+              <p>Nossa equipe entrará em contato em até 24 horas para agendar sua aula experimental gratuita. Prepare-se para transformar sua vida! 💪</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section__header fade-in">
+          <div class="section__badge">📍 Contato</div>
+          <h2 class="section__title">Venha Nos <span>Visitar</span></h2>
+          <p class="section__subtitle">
+            Estamos prontos para recebê-lo. Funcionamento 24 horas, 7 dias por semana!
+          </p>
+        </div>
+
+        <div class="contato__grid">
+          <div class="fade-in">
+            <div class="contato__info-item">
+              <div class="contato__info-icon">📍</div>
+              <div class="contato__info-text">
+                <h4>Endereço</h4>
+                <p>Av. Paulista, 1500 — Bela Vista<br>São Paulo, SP — CEP 01310-200</p>
+              </div>
+            </div>
+
+            <div class="contato__info-item">
+              <div class="contato__info-icon">📞</div>
+              <div class="contato__info-text">
+                <h4>Telefone</h4>
+                <p>(11) 3456-7890<br>WhatsApp: (11) 99876-5432</p>
+              </div>
+            </div>
+
+            <div class="contato__info-item">
+              <div class="contato__info-icon">✉️</div>
+              <div class="contato__info-text">
+                <h4>E-mail</h4>
+                <p>contato@fitlife.com.br<br>suporte@fitlife.com.br</p>
+              </div>
+            </div>
+
+            <div class="contato__info-item">
+              <div class="contato__info-icon">🕐</div>
+              <div class="contato__info-text">
+                <h4>Horário</h4>
+                <p>Segunda a Domingo<br><strong style="color: var(--color-primary);">24 horas</strong></p>
+                <span class="horario-badge">🟢 Aberto agora</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato__map fade-in">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197353822!2d-46.6558!3d-23.5614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQxLjAiUyA0NsKwMzknMjAuOSJX!5e0!3m2!1spt-BR!2sbr!4v1"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da FitLife na Av. Paulista"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="logo logo--stacked" aria-label="FitLife — página inicial">
+            <img src="assets/brand/logo-stacked.svg" alt="FitLife — Transforme seu corpo, transforme sua vida" class="logo__stacked-img" width="160" height="96">
+          </a>
+          <p>
+            <strong style="color: var(--color-primary);">Força · Saúde · Vida</strong><br>
+            Transformando vidas através do fitness desde 2010. 
+            Sua jornada de superação começa aqui. 🏆
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+            <a href="#" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navegação</h4>
+          <ul class="footer__links">
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#loja">Loja</a></li>
+            <li><a href="#treinadores">Treinadores</a></li>
+            <li><a href="#cadastro">Cadastro</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Loja</h4>
+          <ul class="footer__links">
+            <li><a href="#loja">🥛 Proteínas</a></li>
+            <li><a href="#loja">⚡ Performance</a></li>
+            <li><a href="#loja">💊 Vitaminas</a></li>
+            <li><a href="#loja">🍫 Snacks</a></li>
+            <li><a href="#loja">🎒 Acessórios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Suporte</h4>
+          <ul class="footer__links">
+            <li><a href="#contato">Fale Conosco</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 FitLife Academia. Todos os direitos reservados. Feito com 💚 e muito suor.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">↑</button>
+
+  <!-- Carrinho -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+    <div class="cart-drawer__header">
+      <h3 class="cart-drawer__title">🛒 Seu Carrinho</h3>
+      <button type="button" class="cart-drawer__close" id="cartClose" aria-label="Fechar carrinho">✕</button>
+    </div>
+    <div class="cart-drawer__items" id="cartItems"></div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal</span>
+        <span class="cart-drawer__subtotal-value" id="cartSubtotal">R$ 0,00</span>
+      </div>
+      <button type="button" class="btn btn--primary btn--full btn--lg" id="cartCheckout">
+        Finalizar Pedido 🚀
+      </button>
+      <p class="cart-drawer__note">Retire na recepção da FitLife · Pagamento na retirada</p>
+    </div>
+  </aside>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
